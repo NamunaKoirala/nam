@@ -82,7 +82,7 @@ export default function App() {
       {/* Navigation */}
       <nav className="navbar">
         <div className="nav-container">
-          <h2 className="logo">Namuna Koirala</h2>
+          <h2 className="logo">K.Namuna</h2>
           <ul className="nav-menu">
             <li><a href="#home" onClick={() => setActiveSection('home')}>Home</a></li>
             <li><a href="#about" onClick={() => setActiveSection('about')}>About</a></li>
@@ -108,7 +108,7 @@ export default function App() {
           </div>
           <div className="hero-image">
             <img 
-              src="https://via.placeholder.com/300x300/ffc0cb/000000?text=Namuna+K" 
+              src="/attached_assets/WhatsApp Image 2025-09-02 at 20.41.14_0b8f1508_1756824985726.jpg" 
               alt="Namuna Koirala" 
               className="profile-photo"
             />
@@ -140,7 +140,7 @@ export default function App() {
             </div>
             <div className="about-photo">
               <img 
-                src="https://via.placeholder.com/250x250/000000/ffc0cb?text=Namuna" 
+                src="/attached_assets/WhatsApp Image 2025-09-02 at 20.41.14_0b8f1508_1756824985726.jpg" 
                 alt="Namuna Koirala - About" 
               />
             </div>
