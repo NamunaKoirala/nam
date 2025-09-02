@@ -5,6 +5,7 @@ import './App.css';
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const skills = [
     { name: 'C', icon: 'fab fa-cuttlefish' },
@@ -118,13 +119,18 @@ export default function App() {
       <nav className="navbar">
         <div className="nav-container">
           <h2 className="logo">K.Namuna</h2>
-          <ul className="nav-menu">
-            <li><a href="#home" onClick={() => setActiveSection('home')}>Home</a></li>
-            <li><a href="#about" onClick={() => setActiveSection('about')}>About</a></li>
-            <li><a href="#skills" onClick={() => setActiveSection('skills')}>Skills</a></li>
-            <li><a href="#projects" onClick={() => setActiveSection('projects')}>Projects</a></li>
-            <li><a href="#gallery" onClick={() => setActiveSection('gallery')}>Gallery</a></li>
-            <li><a href="#contact" onClick={() => setActiveSection('contact')}>Contact</a></li>
+          <div className="hamburger" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
+            <li><a href="#home" onClick={() => {setActiveSection('home'); setMobileMenuOpen(false);}}>Home</a></li>
+            <li><a href="#about" onClick={() => {setActiveSection('about'); setMobileMenuOpen(false);}}>About</a></li>
+            <li><a href="#skills" onClick={() => {setActiveSection('skills'); setMobileMenuOpen(false);}}>Skills</a></li>
+            <li><a href="#projects" onClick={() => {setActiveSection('projects'); setMobileMenuOpen(false);}}>Projects</a></li>
+            <li><a href="#gallery" onClick={() => {setActiveSection('gallery'); setMobileMenuOpen(false);}}>Gallery</a></li>
+            <li><a href="#contact" onClick={() => {setActiveSection('contact'); setMobileMenuOpen(false);}}>Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -132,6 +138,13 @@ export default function App() {
       {/* Hero Section */}
       <section id="home" className="hero">
         <div className="hero-container">
+          <div className="hero-image mobile-first">
+            <img 
+              src="/attached_assets/WhatsApp Image 2025-09-02 at 20.41.14_0b8f1508_1756824985726.jpg" 
+              alt="Namuna Koirala" 
+              className="profile-photo"
+            />
+          </div>
           <div className="hero-content">
             <h1>Hi, I'm <span className="highlight">Namuna Koirala</span></h1>
             <h3>Aspiring Computer Engineer</h3>
@@ -154,13 +167,6 @@ export default function App() {
                 <i className="fas fa-phone"></i>
               </a>
             </div>
-          </div>
-          <div className="hero-image">
-            <img 
-              src="/attached_assets/WhatsApp Image 2025-09-02 at 20.41.14_0b8f1508_1756824985726.jpg" 
-              alt="Namuna Koirala" 
-              className="profile-photo"
-            />
           </div>
         </div>
       </section>
