@@ -410,28 +410,35 @@ body {
 
 .gallery-slider {
   position: relative;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(255, 192, 203, 0.3);
-  border: 2px solid #ffc0cb;
+  box-shadow: 0 20px 40px rgba(255, 192, 203, 0.4);
+  border: 3px solid #ffc0cb;
 }
 
 .gallery-track {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 0.6s ease;
 }
 
 .gallery-slide {
   min-width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .gallery-slide img {
   width: 100%;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+  filter: brightness(1.1) contrast(1.1) saturate(1.2);
+}
+
+.gallery-slide:hover img {
+  transform: scale(1.05);
 }
 
 .gallery-slide-overlay {
@@ -439,16 +446,50 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
   color: white;
-  padding: 2rem;
-  text-align: center;
+  padding: 2.5rem;
+  text-align: left;
+  backdrop-filter: blur(5px);
 }
 
-.gallery-slide-overlay h4 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+.gallery-info h4 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
   color: #ffc0cb;
+  font-weight: 700;
+}
+
+.gallery-description {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+.gallery-meta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.gallery-location,
+.gallery-category {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 192, 203, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #ffc0cb;
+  border: 1px solid rgba(255, 192, 203, 0.3);
+}
+
+.gallery-location i,
+.gallery-category i {
+  font-size: 0.9rem;
 }
 
 .gallery-controls {
@@ -657,6 +698,26 @@ body {
   }
   
   .gallery-slide img {
-    height: 250px;
+    height: 300px;
+  }
+  
+  .gallery-slider {
+    max-width: 95%;
+  }
+  
+  .gallery-slide-overlay {
+    padding: 1.5rem;
+  }
+  
+  .gallery-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  
+  .gallery-location,
+  .gallery-category {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
   }
 }
