@@ -249,48 +249,55 @@ export default function App() {
       <section id="gallery" className="gallery">
         <div className="container">
           <h2>Latest Design Gallery</h2>
-          <div className="gallery-slider">
-            <div 
-              className="gallery-track" 
-              style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-            >
-              {galleryImages.map((item) => (
-                <div key={item.id} className="gallery-slide">
-                  <img src={item.image} alt={item.title} />
-                  <div className="gallery-slide-overlay">
-                    <div className="gallery-info">
+          <div className="modern-gallery">
+            <div className="gallery-display">
+              <div className="gallery-images-stack">
+                {galleryImages.map((item, index) => (
+                  <div
+                    key={item.id}
+                    className={`gallery-image-card ${index === currentSlide ? 'active' : ''} ${
+                      index === (currentSlide + 1) % galleryImages.length ? 'next' : ''
+                    }`}
+                    style={{
+                      zIndex: index === currentSlide ? 3 : index === (currentSlide + 1) % galleryImages.length ? 2 : 1,
+                      transform: `
+                        ${index === currentSlide ? 'translateX(0) scale(1)' : 
+                          index === (currentSlide + 1) % galleryImages.length ? 'translateX(30%) scale(0.85)' : 
+                          'translateX(60%) scale(0.7)'}
+                      `
+                    }}
+                  >
+                    <img src={item.image} alt={item.title} />
+                    <div className="image-overlay">
                       <h4>{item.title}</h4>
-                      <p className="gallery-description">{item.description}</p>
-                      <div className="gallery-meta">
-                        <span className="gallery-location">
-                          <i className="fas fa-map-marker-alt"></i> {item.location}
-                        </span>
-                        <span className="gallery-category">
-                          <i className="fas fa-camera"></i> {item.category}
-                        </span>
+                      <p>{item.description}</p>
+                      <div className="image-meta">
+                        <span><i className="fas fa-map-marker-alt"></i> {item.location}</span>
+                        <span><i className="fas fa-camera"></i> {item.category}</span>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-          <div className="gallery-controls">
-            <button className="gallery-btn" onClick={prevSlide}>
-              <i className="fas fa-chevron-left"></i> Previous
-            </button>
-            <button className="gallery-btn" onClick={nextSlide}>
-              Next <i className="fas fa-chevron-right"></i>
-            </button>
-          </div>
-          <div className="gallery-dots">
-            {galleryImages.map((_, index) => (
-              <div
-                key={index}
-                className={`gallery-dot ${index === currentSlide ? 'active' : ''}`}
-                onClick={() => goToSlide(index)}
-              ></div>
-            ))}
+            
+            <div className="gallery-navigation">
+              <div className="gallery-counter">
+                <span>Image {currentSlide + 1} of {galleryImages.length}</span>
+              </div>
+              
+              <div className="gallery-direct-buttons">
+                {galleryImages.map((_, index) => (
+                  <button
+                    key={index}
+                    className={`direct-btn ${index === currentSlide ? 'active' : ''}`}
+                    onClick={() => goToSlide(index)}
+                  >
+                    Direct to {index + 1}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
