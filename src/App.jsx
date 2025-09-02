@@ -21,11 +21,11 @@ export default function App() {
   ];
 
   const galleryImages = [
-    { id: 1, title: 'Modern Web Design', image: 'https://via.placeholder.com/800x400/e91e63/ffffff?text=Modern+Web+Design', description: 'Responsive website with modern UI/UX' },
-    { id: 2, title: 'Mobile App Interface', image: 'https://via.placeholder.com/800x400/ad1457/ffffff?text=Mobile+App+UI', description: 'Clean and intuitive mobile application design' },
-    { id: 3, title: 'Dashboard Design', image: 'https://via.placeholder.com/800x400/f8bbd9/333333?text=Dashboard+Design', description: 'Professional dashboard with data visualization' },
-    { id: 4, title: 'E-commerce Platform', image: 'https://via.placeholder.com/800x400/fce4ec/333333?text=E-commerce+Site', description: 'Full-featured online shopping platform' },
-    { id: 5, title: 'Portfolio Website', image: 'https://via.placeholder.com/800x400/e91e63/ffffff?text=Portfolio+Site', description: 'Personal portfolio showcasing creative work' }
+    { id: 1, title: 'Modern Web Design', image: 'https://via.placeholder.com/800x400/000000/ffc0cb?text=Modern+Web+Design', description: 'Responsive website with modern UI/UX' },
+    { id: 2, title: 'Mobile App Interface', image: 'https://via.placeholder.com/800x400/1a1a1a/ffc0cb?text=Mobile+App+UI', description: 'Clean and intuitive mobile application design' },
+    { id: 3, title: 'Dashboard Design', image: 'https://via.placeholder.com/800x400/ffc0cb/000000?text=Dashboard+Design', description: 'Professional dashboard with data visualization' },
+    { id: 4, title: 'E-commerce Platform', image: 'https://via.placeholder.com/800x400/ffb6c1/000000?text=E-commerce+Site', description: 'Full-featured online shopping platform' },
+    { id: 5, title: 'Portfolio Website', image: 'https://via.placeholder.com/800x400/000000/ffc0cb?text=Portfolio+Site', description: 'Personal portfolio showcasing creative work' }
   ];
 
   const projects = [
@@ -33,7 +33,7 @@ export default function App() {
       id: 1,
       title: 'Student Management System',
       description: 'A comprehensive system for managing student records, grades, and attendance built with modern web technologies.',
-      image: 'https://via.placeholder.com/350x200/e91e63/ffffff?text=Student+Management',
+      image: 'https://via.placeholder.com/350x200/000000/ffc0cb?text=Student+Management',
       tags: ['React', 'CSS', 'JavaScript'],
       demoLink: '#',
       codeLink: '#'
@@ -42,7 +42,7 @@ export default function App() {
       id: 2,
       title: 'Personal Blog Website',
       description: 'A responsive blog platform with admin panel, user authentication, and content management features.',
-      image: 'https://via.placeholder.com/350x200/ad1457/ffffff?text=Blog+Website',
+      image: 'https://via.placeholder.com/350x200/1a1a1a/ffc0cb?text=Blog+Website',
       tags: ['HTML', 'CSS', 'WordPress'],
       demoLink: '#',
       codeLink: '#'
@@ -51,7 +51,7 @@ export default function App() {
       id: 3,
       title: 'Calculator App',
       description: 'A modern calculator application with advanced mathematical functions and responsive design.',
-      image: 'https://via.placeholder.com/350x200/f8bbd9/333333?text=Calculator+App',
+      image: 'https://via.placeholder.com/350x200/ffc0cb/000000?text=Calculator+App',
       tags: ['C++', 'Java'],
       demoLink: '#',
       codeLink: '#'
@@ -108,7 +108,7 @@ export default function App() {
           </div>
           <div className="hero-image">
             <img 
-              src="https://via.placeholder.com/300x300/e91e63/ffffff?text=Namuna+K" 
+              src="https://via.placeholder.com/300x300/ffc0cb/000000?text=Namuna+K" 
               alt="Namuna Koirala" 
               className="profile-photo"
             />
@@ -140,7 +140,7 @@ export default function App() {
             </div>
             <div className="about-photo">
               <img 
-                src="https://via.placeholder.com/250x250/ad1457/ffffff?text=Namuna" 
+                src="https://via.placeholder.com/250x250/000000/ffc0cb?text=Namuna" 
                 alt="Namuna Koirala - About" 
               />
             </div>
