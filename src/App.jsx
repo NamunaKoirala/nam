@@ -68,28 +68,28 @@ export default function App() {
       id: 1,
       title: 'Student Management System',
       description: 'A comprehensive system for managing student records, grades, and attendance built with modern web technologies.',
-      image: 'https://via.placeholder.com/350x200/000000/ffc0cb?text=Student+Management',
       tags: ['React', 'CSS', 'JavaScript'],
       demoLink: '#',
-      codeLink: '#'
+      codeLink: '#',
+      icon: 'fas fa-graduation-cap'
     },
     {
       id: 2,
       title: 'Personal Blog Website',
       description: 'A responsive blog platform with admin panel, user authentication, and content management features.',
-      image: 'https://via.placeholder.com/350x200/1a1a1a/ffc0cb?text=Blog+Website',
       tags: ['HTML', 'CSS', 'WordPress'],
       demoLink: '#',
-      codeLink: '#'
+      codeLink: '#',
+      icon: 'fas fa-blog'
     },
     {
       id: 3,
       title: 'Calculator App',
       description: 'A modern calculator application with advanced mathematical functions and responsive design.',
-      image: 'https://via.placeholder.com/350x200/ffc0cb/000000?text=Calculator+App',
       tags: ['C++', 'Java'],
       demoLink: '#',
-      codeLink: '#'
+      codeLink: '#',
+      icon: 'fas fa-calculator'
     }
   ];
 
@@ -139,6 +139,20 @@ export default function App() {
             <div className="hero-buttons">
               <button className="btn-primary" onClick={() => setActiveSection('about')}>About Me</button>
               <button className="btn-secondary" onClick={() => setActiveSection('contact')}>Get In Touch</button>
+            </div>
+            <div className="hero-social-links">
+              <a href="https://www.instagram.com/n.amunaa/" target="_blank" rel="noopener noreferrer" className="hero-social-link">
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/namuna.ko.irala.986219" target="_blank" rel="noopener noreferrer" className="hero-social-link">
+                <i className="fab fa-facebook"></i>
+              </a>
+              <a href="mailto:namunakoirala506@gmail.com" className="hero-social-link">
+                <i className="fas fa-envelope"></i>
+              </a>
+              <a href="tel:+9779767413656" className="hero-social-link">
+                <i className="fas fa-phone"></i>
+              </a>
             </div>
           </div>
           <div className="hero-image">
@@ -205,7 +219,9 @@ export default function App() {
           <div className="projects-grid">
             {projects.map((project) => (
               <div key={project.id} className="project-card">
-                <img src={project.image} alt={project.title} className="project-image" />
+                <div className="project-icon">
+                  <i className={project.icon}></i>
+                </div>
                 <div className="project-content">
                   <h4>{project.title}</h4>
                   <p>{project.description}</p>
@@ -283,7 +299,54 @@ export default function App() {
       <section id="contact" className="contact">
         <div className="container">
           <h2>Get In Touch</h2>
-          <p>Feel free to reach out to me through social media! Let's connect and collaborate.</p>
+          <p>I'm always excited to connect with fellow developers, potential collaborators, or anyone interested in technology. Feel free to reach out!</p>
+          
+          <div className="contact-grid">
+            <div className="contact-info">
+              <h3>Let's Connect</h3>
+              <div className="contact-item">
+                <i className="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <a href="mailto:namunakoirala506@gmail.com">namunakoirala506@gmail.com</a>
+                </div>
+              </div>
+              <div className="contact-item">
+                <i className="fas fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <a href="tel:+9779767413656">+977 9767413656</a>
+                </div>
+              </div>
+              <div className="contact-item">
+                <i className="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Location</h4>
+                  <span>Kathmandu, Nepal</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="contact-form">
+              <h3>Send a Message</h3>
+              <form>
+                <div className="form-group">
+                  <input type="text" placeholder="Your Name" required />
+                </div>
+                <div className="form-group">
+                  <input type="email" placeholder="Your Email" required />
+                </div>
+                <div className="form-group">
+                  <input type="text" placeholder="Subject" required />
+                </div>
+                <div className="form-group">
+                  <textarea rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" className="btn-primary contact-btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+          
           <div className="social-links">
             <a href="https://www.instagram.com/n.amunaa/" target="_blank" rel="noopener noreferrer" className="social-link instagram">
               <i className="fab fa-instagram"></i>
@@ -293,6 +356,14 @@ export default function App() {
               <i className="fab fa-facebook"></i>
               Facebook
             </a>
+            <a href="mailto:namunakoirala506@gmail.com" className="social-link email">
+              <i className="fas fa-envelope"></i>
+              Email
+            </a>
+            <a href="tel:+9779767413656" className="social-link phone">
+              <i className="fas fa-phone"></i>
+              Call
+            </a>
           </div>
         </div>
       </section>
@@ -300,7 +371,54 @@ export default function App() {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2024 Namuna Koirala. All rights reserved.</p>
+          <div className="footer-content">
+            <div className="footer-section">
+              <h4>Namuna Koirala</h4>
+              <p>Aspiring Computer Engineer passionate about creating innovative technological solutions.</p>
+            </div>
+            
+            <div className="footer-section">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home" onClick={() => setActiveSection('home')}>Home</a></li>
+                <li><a href="#about" onClick={() => setActiveSection('about')}>About</a></li>
+                <li><a href="#skills" onClick={() => setActiveSection('skills')}>Skills</a></li>
+                <li><a href="#projects" onClick={() => setActiveSection('projects')}>Projects</a></li>
+                <li><a href="#gallery" onClick={() => setActiveSection('gallery')}>Gallery</a></li>
+              </ul>
+            </div>
+            
+            <div className="footer-section">
+              <h4>Contact Info</h4>
+              <div className="footer-contact">
+                <p><i className="fas fa-envelope"></i> namunakoirala506@gmail.com</p>
+                <p><i className="fas fa-phone"></i> +977 9767413656</p>
+                <p><i className="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+              </div>
+            </div>
+            
+            <div className="footer-section">
+              <h4>Follow Me</h4>
+              <div className="footer-social">
+                <a href="https://www.instagram.com/n.amunaa/" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/namuna.ko.irala.986219" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-facebook"></i>
+                </a>
+                <a href="mailto:namunakoirala506@gmail.com">
+                  <i className="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+9779767413656">
+                  <i className="fas fa-phone"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div className="footer-bottom">
+            <p>&copy; 2024 Namuna Koirala. All rights reserved. | Built with passion and React.js</p>
+          </div>
         </div>
       </footer>
     </div>
