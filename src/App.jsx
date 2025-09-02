@@ -21,11 +21,11 @@ export default function App() {
   ];
 
   const galleryImages = [
-    { id: 1, title: 'Modern Web Design', image: 'https://via.placeholder.com/800x400/000000/ffc0cb?text=Modern+Web+Design', description: 'Responsive website with modern UI/UX' },
-    { id: 2, title: 'Mobile App Interface', image: 'https://via.placeholder.com/800x400/1a1a1a/ffc0cb?text=Mobile+App+UI', description: 'Clean and intuitive mobile application design' },
-    { id: 3, title: 'Dashboard Design', image: 'https://via.placeholder.com/800x400/ffc0cb/000000?text=Dashboard+Design', description: 'Professional dashboard with data visualization' },
-    { id: 4, title: 'E-commerce Platform', image: 'https://via.placeholder.com/800x400/ffb6c1/000000?text=E-commerce+Site', description: 'Full-featured online shopping platform' },
-    { id: 5, title: 'Portfolio Website', image: 'https://via.placeholder.com/800x400/000000/ffc0cb?text=Portfolio+Site', description: 'Personal portfolio showcasing creative work' }
+    { id: 1, title: 'Mountain View Adventure', image: '/attached_assets/WhatsApp Image 2025-09-02 at 20.41.14_1df4fa2b_1756825093302.jpg', description: 'Beautiful mountain scenery with cityscape view' },
+    { id: 2, title: 'Evening Style', image: '/attached_assets/WhatsApp Image 2025-09-02 at 20.41.15_51f6764d_1756825095867.jpg', description: 'Stylish evening look with leather jacket' },
+    { id: 3, title: 'Rock Formation Explorer', image: '/attached_assets/WhatsApp Image 2025-09-02 at 20.41.18_56895b6e_1756825098112.jpg', description: 'Adventure photography at natural rock formations' },
+    { id: 4, title: 'Bridge Adventure', image: '/attached_assets/WhatsApp Image 2025-09-02 at 20.41.18_ed394e4a_1756825104058.jpg', description: 'Scenic bridge with mountain valley backdrop' },
+    { id: 5, title: 'Night Photography', image: '/attached_assets/WhatsApp Image 2025-09-02 at 20.41.20_5e4c899d_1756825106620.jpg', description: 'Creative night photography with lighting effects' }
   ];
 
   const projects = [
