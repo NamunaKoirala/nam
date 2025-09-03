@@ -26,7 +26,7 @@ export default function About() {
           </div>
           <div className="about-photo">
             <img 
-              src="/attached_assets/WhatsApp Image 2025-09-02 at 20.41.14_0b8f1508_1756824985726.jpg" 
+              src="../assets/qfx.jpeg" 
               alt="Namuna Koirala - About" 
             />
           </div>

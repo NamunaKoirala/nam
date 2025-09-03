@@ -7,7 +7,7 @@ export default function Hero({ setActiveSection }) {
       <div className="hero-container">
         <div className="hero-image mobile-first">
           <img 
-            src="/attached_assets/WhatsApp Image 2025-09-02 at 20.41.14_0b8f1508_1756824985726.jpg" 
+            src="../assets/profile.jpg" 
             alt="Namuna Koirala" 
             className="profile-photo"
           />
