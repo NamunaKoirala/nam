@@ -34,6 +34,9 @@ export default function Footer({ setActiveSection }) {
           <div className="footer-section">
             <h4>Follow Me</h4>
             <div className="footer-social">
+              <a href ="https://github.com/NamunaKoirala" target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github"></i>
+              </a>
               <a href="https://www.instagram.com/n.amunaa/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
@@ -51,7 +54,7 @@ export default function Footer({ setActiveSection }) {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2024 Namuna Koirala. All rights reserved. | Built with passion and React.js</p>
+          <p>&copy; 2025 Namuna Koirala. All rights reserved. | Built with passion and React.js</p>
         </div>
       </div>
     </footer>

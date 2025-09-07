@@ -21,6 +21,9 @@ export default function Hero({ setActiveSection }) {
             <button className="btn-secondary" onClick={() => setActiveSection('contact')}>Get In Touch</button>
           </div>
           <div className="hero-social-links">
+            < a href="https://github.com/NamunaKoirala" target="_blank" rel="noopener noreferrer" className="hero-social-link">
+              <i className="fab fa-github"></i>
+            </a>
             <a href="https://www.instagram.com/n.amunaa/" target="_blank" rel="noopener noreferrer" className="hero-social-link">
               <i className="fab fa-instagram"></i>
             </a>

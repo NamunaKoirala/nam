@@ -465,7 +465,7 @@ body {
 /* Gallery Section */
 .gallery {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  background: linear-gradient(135deg,#1a1a1a #2a2a2a);
   overflow: hidden;
 }
 
@@ -594,13 +594,13 @@ body {
 }
 
 .gallery-counter span {
-  background: linear-gradient(45deg, #8b5cf6, #a855f7);
-  color: white;
+  background: linear-gradient(45deg,#ffc0cb);
+  color: black ;
   padding: 0.8rem 1.5rem;
   border-radius: 25px;
   font-size: 1rem;
   font-weight: 600;
-  box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
+  box-shadow: 0 5px 15px white(139, 92, 246, 0.3);
 }
 
 .gallery-direct-buttons {
@@ -611,8 +611,8 @@ body {
 }
 
 .direct-btn {
-  background: #4a5568;
-  color: white;
+  background: #ffc0cb;
+  color: black;
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 20px;
@@ -624,22 +624,22 @@ body {
 }
 
 .direct-btn:hover {
-  background: #2d3748;
+  background: white;
   transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 15px white (0, 0, 0, 0.3);
 }
 
 .direct-btn.active {
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: linear-gradient(45deg, 2a2a2a);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 6px 20px white(102, 126, 234, 0.4);
 }
 
 /* Contact Section */
 .contact {
   padding: 5rem 0;
-  background: #2a2a2a;
+  background:  #2a2a2a;
   text-align: center;
 }
 
@@ -763,13 +763,16 @@ body {
   transition: all 0.3s ease;
   border: 2px solid;
 }
-
-.social-link.instagram {
-  background: linear-gradient(45deg, #ffc0cb, #ffb6c1);
-  color: #000;
+.social-link.github{
+  background: transparent;
+  color: #ffc0cb;
   border-color: #ffc0cb;
 }
-
+.social-link.instagram {
+  background: transparent;
+  color: #ffc0cb;
+  border-color: #ffc0cb;
+}
 .social-link.facebook {
   background: transparent;
   color: #ffc0cb;
@@ -792,7 +795,8 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(255, 192, 203, 0.4);
 }
-
+.social-link.github:hover,
+.social-link.instagram:hover,
 .social-link.facebook:hover,
 .social-link.email:hover,
 .social-link.phone:hover {

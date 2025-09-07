@@ -5,30 +5,30 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'Student Management System',
-      description: 'A comprehensive system for managing student records, grades, and attendance built with modern web technologies.',
-      tags: ['React', 'CSS', 'JavaScript'],
+      title: 'Calculator',
+      description: 'A simple calculator application for basic arithmetic operations.',
+      tags: ['JavaScript', 'HTML', 'CSS'],
       demoLink: '#',
-      codeLink: '#',
-      icon: 'fas fa-graduation-cap'
+      codeLink: 'https://github.com/NamunaKoirala/calculator',
+      icon: 'fas fa-calculator'
     },
     {
       id: 2,
-      title: 'Personal Blog Website',
-      description: 'A responsive blog platform with admin panel, user authentication, and content management features.',
-      tags: ['HTML', 'CSS', 'WordPress'],
+      title: 'Portfolio',
+      description: 'A personal portfolio website showcasing projects and skills.',
+      tags: ['React', 'CSS', 'JavaScript'],
       demoLink: '#',
-      codeLink: '#',
-      icon: 'fas fa-blog'
+      codeLink: 'https://github.com/NamunaKoirala/portfolio',
+      icon: 'fas fa-user'
     },
     {
       id: 3,
-      title: 'Calculator App',
-      description: 'A modern calculator application with advanced mathematical functions and responsive design.',
-      tags: ['C++', 'Java'],
+      title: 'Portfoiloo',
+      description: 'A responsive portfolio project with creative design elements.',
+      tags: ['HTML', 'CSS', 'JavaScript'],
       demoLink: '#',
-      codeLink: '#',
-      icon: 'fas fa-calculator'
+      codeLink: 'https://github.com/NamunaKoirala/portfoiloo',
+      icon: 'fas fa-briefcase'
     }
   ];
 

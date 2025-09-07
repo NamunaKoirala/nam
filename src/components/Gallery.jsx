@@ -8,7 +8,7 @@ export default function Gallery() {
     { 
       id: 1, 
       title: 'Mountain View Adventure', 
-      image: '/attached_assets/WhatsApp Image 2025-09-02 at 20.41.14_1df4fa2b_1756825093302.jpg', 
+      image: '../assets/lamjung.jpg',
       description: 'Exploring the beautiful landscapes of Nepal with stunning mountain views',
       location: 'Kathmandu Valley',
       category: 'Travel Photography'
@@ -16,7 +16,7 @@ export default function Gallery() {
     { 
       id: 2, 
       title: 'Traditional Fashion Style', 
-      image: '/attached_assets/WhatsApp Image 2025-09-02 at 20.41.15_51f6764d_1756825095867.jpg', 
+      image: '../assets/profile.jpg', 
       description: 'Embracing traditional Nepali fashion with modern photography techniques',
       location: 'Cultural Heritage Site',
       category: 'Portrait Photography'
@@ -24,7 +24,7 @@ export default function Gallery() {
     { 
       id: 3, 
       title: 'Natural Rock Formations', 
-      image: '/attached_assets/WhatsApp Image 2025-09-02 at 20.41.18_56895b6e_1756825098112.jpg', 
+      image: '../assets/rock.jpg', 
       description: 'Capturing the raw beauty of Nepal\'s geological wonders and natural formations',
       location: 'Rocky Terrain',
       category: 'Nature Photography'
@@ -32,7 +32,7 @@ export default function Gallery() {
     { 
       id: 4, 
       title: 'Scenic Bridge Journey', 
-      image: '/attached_assets/WhatsApp Image 2025-09-02 at 20.41.18_ed394e4a_1756825104058.jpg', 
+      image: '../assets/mountain.jpg', 
       description: 'Adventure photography showcasing Nepal\'s infrastructure against natural backdrops',
       location: 'Mountain Bridge',
       category: 'Adventure Photography'
@@ -40,7 +40,7 @@ export default function Gallery() {
     { 
       id: 5, 
       title: 'Creative Night Vision', 
-      image: '/attached_assets/WhatsApp Image 2025-09-02 at 20.41.20_5e4c899d_1756825106620.jpg', 
+      image: '../assets/pokhara.jpg', 
       description: 'Experimental photography exploring creative lighting and atmospheric effects',
       location: 'Urban Setting',
       category: 'Creative Photography'
@@ -61,7 +61,7 @@ export default function Gallery() {
   return (
     <section id="gallery" className="gallery">
       <div className="container">
-        <h2>Latest Design Gallery</h2>
+        <h2>Gallery</h2>
         <div className="modern-gallery">
           <div className="gallery-display">
             <div className="gallery-images-stack">

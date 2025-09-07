@@ -55,6 +55,10 @@ export default function Contact() {
         </div>
         
         <div className="social-links">
+          < a href=" https://github.com/NamunaKoirala" target="_blank" rel="noopener noreferrer" className="social-link github">
+          <i className="fab fa-github"></i>
+            GitHub
+          </a>
           <a href="https://www.instagram.com/n.amunaa/" target="_blank" rel="noopener noreferrer" className="social-link instagram">
             <i className="fab fa-instagram"></i>
             Instagram
