@@ -14,7 +14,7 @@ export default function Hero({ setActiveSection }) {
         </div>
         <div className="hero-content">
           <h1>Hi, I'm <span className="highlight">Namuna Koirala</span></h1>
-          <h3>Aspiring Computer Engineer</h3>
+          <h3>Aspiring Student</h3>
           <p>Currently studying Grade 12 at Adarsha Secondary School, passionate about technology, programming, and creating innovative solutions through code.</p>
           <div className="hero-buttons">
             <button className="btn-primary" onClick={() => setActiveSection('about')}>About Me</button>
