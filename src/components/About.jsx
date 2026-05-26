@@ -20,7 +20,7 @@ export default function About() {
             </p>
             <p>
               I believe in continuous learning and am always excited to take on new challenges in the 
-              field of technology and software development. My goal is to become a skilled in coding 
+              field of technology and software development. My goal is to become skilled in coding 
               and contribute to innovative technological solutions.
             </p>
           </div>
