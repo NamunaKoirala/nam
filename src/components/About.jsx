@@ -14,13 +14,13 @@ export default function About() {
               from the same institution with excellent results.
             </p>
             <p>
-              I am passionate about computer engineering and technology. My journey in programming and 
+              I am passionate about programming and technology. My journey in programming and 
               web development has equipped me with various skills and technologies that I continue to 
               expand upon every day. I love solving problems through code and creating user-friendly applications.
             </p>
             <p>
               I believe in continuous learning and am always excited to take on new challenges in the 
-              field of technology and software development. My goal is to become a skilled computer engineer 
+              field of technology and software development. My goal is to become a skilled in coding 
               and contribute to innovative technological solutions.
             </p>
           </div>
