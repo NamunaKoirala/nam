@@ -8,7 +8,7 @@ export default function Footer({ setActiveSection }) {
         <div className="footer-content">
           <div className="footer-section">
             <h4>Namuna Koirala</h4>
-            <p>Aspiring Computer Engineer passionate about creating innovative technological solutions.</p>
+            <p>Aspiring Individual passionate about creating innovative technological solutions.</p>
           </div>
           
           <div className="footer-section">
@@ -27,7 +27,7 @@ export default function Footer({ setActiveSection }) {
             <div className="footer-contact">
               <p><i className="fas fa-envelope"></i> namunakoirala506@gmail.com</p>
               <p><i className="fas fa-phone"></i> +977 9767413656</p>
-              <p><i className="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+              <p><i className="fas fa-map-marker-alt"></i> Bhaktapur, Nepal</p>
             </div>
           </div>
           
@@ -54,7 +54,7 @@ export default function Footer({ setActiveSection }) {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2025 Namuna Koirala. All rights reserved. | Built with passion and React.js</p>
+          <p>&copy; Namuna Koirala. All rights reserved.</p>
         </div>
       </div>
     </footer>
